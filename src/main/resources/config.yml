@@ -1,0 +1,41 @@
+# ChunkBuy Configuration
+
+# World settings
+world:
+  # Pattern for world names. %player% will be replaced with player UUID
+  name-pattern: "chunkbuy_%player%"
+  # Whether to create per-player worlds or use a shared world
+  per-player-worlds: true
+
+# Economy settings
+economy:
+  # Default price for purchasing a chunk
+  default-chunk-price: 1000.0
+  # Whether economy is enabled (requires Vault)
+  enabled: true
+
+# Chunk settings
+chunks:
+  # Maximum chunks a player can purchase (-1 for unlimited)
+  max-per-player: -1
+  # Whether to allow purchasing chunks that are already owned
+  allow-repurchase: false
+
+# Performance settings
+performance:
+  # Enable async chunk generation (recommended: true)
+  async-generation: true
+  # Number of chunks to generate per tick (lower = smoother, higher = faster)
+  chunks-per-tick: 1
+  # Cache generated chunk data
+  cache-chunks: true
+
+# GUI settings
+gui:
+  # View distance in chunks (how many chunks to show around player)
+  view-distance: 2
+  # Title of the purchase GUI
+  title: "Purchase Chunks"
+  # Title of the confirmation GUI
+  confirm-title: "Confirm Purchase"
+

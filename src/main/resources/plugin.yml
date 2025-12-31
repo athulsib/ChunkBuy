@@ -1,0 +1,20 @@
+name: ChunkBuy
+version: '1.0-SNAPSHOT'
+main: com.athulsib.chunkbuy.ChunkBuy
+api-version: '1.21'
+softdepend:
+  - FastAsyncWorldEdit
+  - Vault
+commands:
+  chunkbuy:
+    description: Open the chunk purchase GUI
+    aliases: [cb]
+    permission: chunkbuy.use
+    permission-message: You don't have permission to use this command.
+permissions:
+  chunkbuy.use:
+    description: Allows players to use the chunk purchase GUI
+    default: true
+  chunkbuy.reload:
+    description: Allows reloading the plugin configuration
+    default: op
